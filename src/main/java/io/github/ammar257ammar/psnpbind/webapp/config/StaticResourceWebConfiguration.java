@@ -14,7 +14,7 @@ public class StaticResourceWebConfiguration implements WebMvcConfigurer {
         "classpath:/static/assets/js/",
         "classpath:/static/assets/images/",
         "classpath:/static/assets/fonts/",
-        "file:///media/apc/DATAD/PSnpBind/Pipeline/processing/vina-docking/"
+        "file:///dockings/"
     };
     protected static final String[] RESOURCE_PATHS = new String[] { "/css/**", "/js/**", "/images/**", "/fonts/**", "/files/**" };
 
