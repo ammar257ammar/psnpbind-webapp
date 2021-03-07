@@ -91,7 +91,7 @@
 					<table class="table">
 						<tr>
 							<td><p class="font-weight-bold">PBB ID</p></td>
-							<td>${vl.vlVariant.protein.pdbId}</td>
+							<td><a href="https://www.rcsb.org/structure/${vl.vlVariant.protein.pdbId}" target="_blank">${vl.vlVariant.protein.pdbId}</a></td>
 						</tr>
 						<tr>
 							<td><p class="font-weight-bold">Variant Type</p></td>
