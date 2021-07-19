@@ -13,7 +13,7 @@ spring:
     banner-mode: off
     logStartupInfo: false
   datasource:
-    driverClassName: com.mysql.jdbc.Driver
+    driverClassName: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://psnpbind-mysql/psnpbind?requireSSL=false&useSSL=false
     username: root
     password: root 
