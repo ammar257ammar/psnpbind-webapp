@@ -83,15 +83,13 @@
 										  cartoon off;
 										  wireframe 0.5;
 										  spacefill 0.5;
-										  set specular on;
-										  load append /files/${variant.protein.pdbId}_ligand_similar_2_min_docking.pdbqt;
-										  display 1.1,2.1;`,"left");
+										  set specular on;`,"left");
 					</script>				
 				</div>
 				<div class="col-md-6 col-sm-12">
 					<table class="table variant-table">
 						<tr>
-							<td><p class="font-weight-bold">PBB ID</p></td>
+							<td><p class="font-weight-bold">PDB ID</p></td>
 							<td>${variant.protein.pdbId}</td>
 						</tr>
 						<tr>

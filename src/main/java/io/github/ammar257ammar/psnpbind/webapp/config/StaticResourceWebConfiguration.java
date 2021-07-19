@@ -1,6 +1,9 @@
 package io.github.ammar257ammar.psnpbind.webapp.config;
 
+import java.util.concurrent.TimeUnit;
+
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.CacheControl;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
@@ -22,7 +25,8 @@ public class StaticResourceWebConfiguration implements WebMvcConfigurer {
 	public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler(RESOURCE_PATHS)
         		.addResourceLocations(RESOURCE_LOCATIONS)
-		        .setCachePeriod(3600)
+		        .setCachePeriod(14400)
+        		.setCacheControl(CacheControl.maxAge(7, TimeUnit.DAYS))
 		        .resourceChain(true)
 		        .addResolver(new PathResourceResolver());
     }

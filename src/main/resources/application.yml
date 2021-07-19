@@ -3,17 +3,28 @@ server:
   forward-headers-strategy: framework
   servlet:
     context-path: /
-  
+  compression:
+    enabled: true
+    mime-types: text/html,text/xml,text/plain,text/css,text/javascript,application/javascript,application/json
+  http2:
+    enabled: true
 spring:
   main:
-    banner-mode: "off"
+    banner-mode: off
+    logStartupInfo: false
   datasource:
     driverClassName: com.mysql.jdbc.Driver
     url: jdbc:mysql://psnpbind-mysql/psnpbind?requireSSL=false&useSSL=false
     username: root
-    password: root
+    password: root 
+  resources:
+    cache:
+      cachecontrol:
+        max-age: 7d
+        must-revalidate: true
   jpa:
-    hibernate.ddl-auto: none
+    hibernate:
+        ddl-auto: none
     generate-ddl: true
     show-sql: true
     properties:
@@ -23,7 +34,6 @@ spring:
     template-loader-path: classpath:/templates
     suffix: .ftl
     cache: false
-  
 logging:
   level:
     org:

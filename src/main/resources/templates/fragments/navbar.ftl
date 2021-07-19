@@ -21,7 +21,8 @@
 
                         <div class="collapse navbar-collapse sub-menu-bar" id="navbarTwo">
                             <ul class="navbar-nav m-auto">
-                                <li class="nav-item active"><a class="page-scroll" href="/">home</a></li>
+                                <li class="nav-item"><a class="page-scroll" href="/">home</a></li>
+                                <li class="nav-item"><a class="page-scroll" href="/swagger-ui/index.html?configUrl=/v3/api-docs/swagger-config">REST API</a></li>
                                 <li class="nav-item"><a class="page-scroll" href="/methodology">Methodology</a></li>
                                 <li class="nav-item"><a class="page-scroll" href="/citation">Citation</a></li>
                             </ul>
@@ -29,7 +30,7 @@
                         
                         <div class="navbar-btn d-none d-sm-inline-block">
                             <ul>
-                                <li><a class="solid" href="#">Download</a></li>
+                                <li><a class="solid" href="https://doi.org/10.5281/zenodo.5112334">Download</a></li>
                             </ul>
                         </div>
                     </nav> <!-- navbar -->

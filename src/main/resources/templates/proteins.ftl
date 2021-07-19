@@ -7,12 +7,8 @@
     <section id="home" class="slider_area">
         
         <div class="view">
-			<!--Video source-->
-			<video class="video-fluid" autoplay loop muted>
-			  <source src="images/slider/video.mp4" type="video/mp4" />
-			</video>
-			<div class="mask rgba-indigo-light"></div>
-		</div>
+			<img src="images/slider/psnpbind-intro.png" alt="PSnpBind intro image" />
+        </div>
     </section>
 
     <!-- Video background ENDS -->

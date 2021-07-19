@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+      <loc>http://psnpbind.org/</loc>
+      <lastmod>2021-07-18</lastmod>
+      <changefreq>yearly</changefreq>
+      <priority>0.5</priority>
+</url>
+<url>
+      <loc>http://psnpbind.org/swagger-ui/index.html?configUrl=/v3/api-docs/swagger-config</loc>
+      <lastmod>2021-07-18</lastmod>
+      <changefreq>yearly</changefreq>
+      <priority>0.5</priority>
+</url>
+<url>
+      <loc>http://psnpbind.org/methodology</loc>
+      <lastmod>2021-07-18</lastmod>
+      <changefreq>yearly</changefreq>
+      <priority>0.5</priority>
+</url>
+<url>
+      <loc>http://psnpbind.org/citation</loc>
+      <lastmod>2021-07-18</lastmod>
+      <changefreq>yearly</changefreq>
+      <priority>0.5</priority>
+</url>
+<url>
+      <loc>http://psnpbind.org/protein/1owh</loc>
+      <lastmod>2021-07-18</lastmod>
+      <changefreq>yearly</changefreq>
+      <priority>0.5</priority>
+</url>
+<url>
+      <loc>http://psnpbind.org/protein/2c3i</loc>
+      <lastmod>2021-07-18</lastmod>
+      <changefreq>yearly</changefreq>
+      <priority>0.5</priority>
+</url>
+<url>
+      <loc>http://psnpbind.org/protein/2hb1</loc>
+      <lastmod>2021-07-18</lastmod>
+      <changefreq>yearly</changefreq>
+      <priority>0.5</priority>
+</url>
+<url>
+      <loc>http://psnpbind.org/protein/2pog</loc>
+      <lastmod>2021-07-18</lastmod>
+      <changefreq>yearly</changefreq>
+      <priority>0.5</priority>
+</url>
+<url>
+      <loc>http://psnpbind.org/protein/2weg</loc>
+      <lastmod>2021-07-18</lastmod>
+      <changefreq>yearly</changefreq>
+      <priority>0.5</priority>
+</url>
+<url>
+      <loc>http://psnpbind.org/protein/2y5h</loc>
+      <lastmod>2021-07-18</lastmod>
+      <changefreq>yearly</changefreq>
+      <priority>0.5</priority>
+</url>
+<url>
+      <loc>http://psnpbind.org/protein/3b27</loc>
+      <lastmod>2021-07-18</lastmod>
+      <changefreq>yearly</changefreq>
+      <priority>0.5</priority>
+</url>
+<url>
+      <loc>http://psnpbind.org/protein/3b5r</loc>
+      <lastmod>2021-07-18</lastmod>
+      <changefreq>yearly</changefreq>
+      <priority>0.5</priority>
+</url>
+<url>
+      <loc>http://psnpbind.org/protein/3fv1</loc>
+      <lastmod>2021-07-18</lastmod>
+      <changefreq>yearly</changefreq>
+      <priority>0.5</priority>
+</url>
+<url>
+      <loc>http://psnpbind.org/protein/3jvr</loc>
+      <lastmod>2021-07-18</lastmod>
+      <changefreq>yearly</changefreq>
+      <priority>0.5</priority>
+</url>
+<url>
+      <loc>http://psnpbind.org/protein/3pxf</loc>
+      <lastmod>2021-07-18</lastmod>
+      <changefreq>yearly</changefreq>
+      <priority>0.5</priority>
+</url>
+<url>
+      <loc>http://psnpbind.org/protein/3u9q</loc>
+      <lastmod>2021-07-18</lastmod>
+      <changefreq>yearly</changefreq>
+      <priority>0.5</priority>
+</url>
+<url>
+      <loc>http://psnpbind.org/protein/3udh</loc>
+      <lastmod>2021-07-18</lastmod>
+      <changefreq>yearly</changefreq>
+      <priority>0.5</priority>
+</url>
+<url>
+      <loc>http://psnpbind.org/protein/3up2</loc>
+      <lastmod>2021-07-18</lastmod>
+      <changefreq>yearly</changefreq>
+      <priority>0.5</priority>
+</url>
+<url>
+      <loc>http://psnpbind.org/protein/3utu</loc>
+      <lastmod>2021-07-18</lastmod>
+      <changefreq>yearly</changefreq>
+      <priority>0.5</priority>
+</url>
+<url>
+      <loc>http://psnpbind.org/protein/4crc</loc>
+      <lastmod>2021-07-18</lastmod>
+      <changefreq>yearly</changefreq>
+      <priority>0.5</priority>
+</url>
+<url>
+      <loc>http://psnpbind.org/protein/4dli</loc>
+      <lastmod>2021-07-18</lastmod>
+      <changefreq>yearly</changefreq>
+      <priority>0.5</priority>
+</url>
+<url>
+      <loc>http://psnpbind.org/protein/4e5w</loc>
+      <lastmod>2021-07-18</lastmod>
+      <changefreq>yearly</changefreq>
+      <priority>0.5</priority>
+</url>
+<url>
+      <loc>http://psnpbind.org/protein/4gr0</loc>
+      <lastmod>2021-07-18</lastmod>
+      <changefreq>yearly</changefreq>
+      <priority>0.5</priority>
+</url>
+<url>
+      <loc>http://psnpbind.org/protein/4j21</loc>
+      <lastmod>2021-07-18</lastmod>
+      <changefreq>yearly</changefreq>
+      <priority>0.5</priority>
+</url>
+<url>
+      <loc>http://psnpbind.org/protein/4jia</loc>
+      <lastmod>2021-07-18</lastmod>
+      <changefreq>yearly</changefreq>
+      <priority>0.5</priority>
+</url>
+<url>
+      <loc>http://psnpbind.org/protein/4m0y</loc>
+      <lastmod>2021-07-18</lastmod>
+      <changefreq>yearly</changefreq>
+      <priority>0.5</priority>
+</url>
+<url>
+      <loc>http://psnpbind.org/protein/4twp</loc>
+      <lastmod>2021-07-18</lastmod>
+      <changefreq>yearly</changefreq>
+      <priority>0.5</priority>
+</url>
+<url>
+      <loc>http://psnpbind.org/protein/4wiv</loc>
+      <lastmod>2021-07-18</lastmod>
+      <changefreq>yearly</changefreq>
+      <priority>0.5</priority>
+</url>
+<url>
+      <loc>http://psnpbind.org/protein/5a7b</loc>
+      <lastmod>2021-07-18</lastmod>
+      <changefreq>yearly</changefreq>
+      <priority>0.5</priority>
+</url>
+<url>
+      <loc>http://psnpbind.org/protein/5c28</loc>
+      <lastmod>2021-07-18</lastmod>
+      <changefreq>yearly</changefreq>
+      <priority>0.5</priority>
+</url>
+</urlset>

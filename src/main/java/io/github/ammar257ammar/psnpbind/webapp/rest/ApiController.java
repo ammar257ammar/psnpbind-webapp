@@ -252,6 +252,7 @@ public class ApiController {
     }
     
     @GetMapping("/error")
+    @Operation(summary = "error", hidden=true)
     public ErrorPayload error() {
         return new ErrorPayload(
         		Instant.now().getEpochSecond(), 

@@ -8,13 +8,12 @@
                         <a class="mt-30" href="/"><img src="/images/logo.svg" alt="Logo"></a>
                     </div> <!-- footer logo -->
                     <ul class="social text-center mt-60">
-                        <li><a href="https://facebook.com/psnpbind"><i class="fab fa-facebook"></i></a></li>
-                        <li><a href="https://twitter.com/psnpbind"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="https://github.com/psnpbind"><i class="fab fa-github"></i></a></li>
-                        <li><a href="#"><i class="lni lni-linkedin-original"></i></a></li>
+                        <li><a href="https://twitter.com/bigcat_um"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://github.com/BiGCAT-UM/psnpbind-webapp"><i class="fab fa-github"></i></a></li>
                     </ul> <!-- social -->
-                    <div class="footer-support text-center">
-                        <span class="mail">support@psnpbind.com</span>
+                    <div class="text-center">
+                        <a class="mt-30" href="https://www.maastrichtuniversity.nl"><img src="/images/um-logo.jpg" height="60px" alt="Maastricht University Logo"></a>
+                        <a class="ml-30" href="https://www.maastrichtuniversity.nl/research/bioinformatics"><img src="/images/bigcat-logo.gif"  height="60px" alt="Department of Bioinformatics Logo"></a>                        
                     </div>
                     <div class="copyright text-center mt-35">
                         <p class="text">Developed by <a href="http://github.com/ammar257ammar" rel="nofollow">Ammar Ammar</a> </p>

@@ -84,13 +84,13 @@
 										  spacefill 0.5;
 										  set specular on;
 										  load append /files/${vl.vlVariant.protein.pdbId}/proteins/${vl.variantFolder}/vina/${vl.ligandFolder}/${vl.ligandFolder}_min_docking.pdbqt;
-										  display 1.1,2.1;`,"left");
+										  display 1.1,2.1; frame 0;`,"left");
 					</script>
 				</div>
 				<div class="col-md-6 col-sm-12">
 					<table class="table">
 						<tr>
-							<td><p class="font-weight-bold">PBB ID</p></td>
+							<td><p class="font-weight-bold">PDB ID</p></td>
 							<td><a href="https://www.rcsb.org/structure/${vl.vlVariant.protein.pdbId}" target="_blank">${vl.vlVariant.protein.pdbId}</a></td>
 						</tr>
 						<tr>
