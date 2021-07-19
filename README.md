@@ -1,6 +1,6 @@
 # PSnpBind Webapp
 
-![GitHub top language](https://img.shields.io/github/languages/top/ammar257ammar/psnpbind-webapp) ![GitHub](https://img.shields.io/github/license/ammar257ammar/psnpbind-webapp) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/ammar257ammar/psnpbind-webapp) ![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/aammar/psnpbind-webapp) [![Dockerhub](https://img.shields.io/badge/dockerhub-aammar%2Fpsnpbind--webapp-green)](https://hub.docker.com/r/aammar/psnpbind-webapp)
+![GitHub top language](https://img.shields.io/github/languages/top/ammar257ammar/psnpbind-webapp) ![GitHub](https://img.shields.io/github/license/ammar257ammar/psnpbind-webapp) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/ammar257ammar/psnpbind-webapp) ![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/aammar/psnpbind-webapp) [![Dockerhub](https://img.shields.io/badge/dockerhub-aammar%2Fpsnpbind--webapp-green)](https://hub.docker.com/r/aammar/psnpbind-webapp) [![DOI](https://zenodo.org/badge/339152290.svg)](https://zenodo.org/badge/latestdoi/339152290)
 
 PSnpBind Webapp is the repository behind the PSnpBind website that is made to visualize the results of the PSnpBind dataset and provide a REST API to access its content.
 
