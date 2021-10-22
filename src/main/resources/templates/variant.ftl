@@ -83,7 +83,35 @@
 										  cartoon off;
 										  wireframe 0.5;
 										  spacefill 0.5;
-										  set specular on;`,"left");
+										  set specular on;
+										  set refreshing off;
+										  if(antialiasDisplay);
+										  antialiasDisplay = false;
+										  cartoonFancy=false;
+										  antialiasDisplayFlag = false;else;antialiasDisplay = true;
+										  cartoonFancy=true;
+										  antialiasDisplayFlag = true;
+										  endif;
+										  set refreshing on;refresh;`,"left");
+						function superimpose(){
+						  
+						  Jmol.script(obie,`load append /files/${variant.protein.pdbId}/proteins/${variant.protein.pdbId}_protein_Repair_WT/${variant.protein.pdbId}_protein_Repair_WT_final.pdb;
+                                                          compare {1.1} {2.1} SUBSET{*.CA} ATOMS{protein}{protein} ROTATE TRANSLATE 2.0;
+                                                          select all; center selected;
+                                                          cartoon only;
+                                                          select 2.1; color orange;
+                                                          display 1.1,2.1;
+                                                          frame 0;
+                                                          set refreshing off;
+                                                          if(antialiasDisplay);
+                                                          antialiasDisplay = false;
+                                                          cartoonFancy=false;
+                                                          antialiasDisplayFlag = false;else;antialiasDisplay = true;
+                                                          cartoonFancy=true;
+                                                          antialiasDisplayFlag = true;
+                                                          endif;
+                                                          set refreshing on;refresh;`,"left");
+						}
 					</script>				
 				</div>
 				<div class="col-md-6 col-sm-12">
@@ -112,6 +140,15 @@
 							<td><p class="font-weight-bold">Chain</p></td>
 							<td>${variant.chain}</td>
 						</tr>
+						<tr>
+						        <td colspan="2"><button class="btn btn-primary" onclick="superimpose()">Superimpose to wild-type protein</button></td>
+						</tr>
+                                                <tr>
+                                                        <td colspan="2"><a class="btn btn-success" href="/files/${variant.protein.pdbId}/proteins/${variant.protein.pdbId}_protein_Repair_${variant.variantFolder}/${variant.protein.pdbId}_protein_Repair_${variant.variantFolder}_final.pdb">Download variant protein structure</a></td>
+                                                </tr>
+                                                <tr>
+                                                        <td colspan="2"><a class="btn btn-success" href="/files/${variant.protein.pdbId}/proteins/${variant.protein.pdbId}_protein_Repair_WT/${variant.protein.pdbId}_protein_Repair_WT_final.pdb">Download wild-type protein structure</a></td>
+                                                </tr>
 					</table>
 				</div>
             </div> <!-- row -->

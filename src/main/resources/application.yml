@@ -14,7 +14,7 @@ spring:
     logStartupInfo: false
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://psnpbind-mysql/psnpbind?requireSSL=false&useSSL=false
+    url: jdbc:mysql://psnpbind-mysql/psnpbind?requireSSL=false&useSSL=false&serverTimezone=UTC
     username: root
     password: root 
   resources:

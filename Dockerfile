@@ -1,6 +1,6 @@
 FROM maven:3-jdk-8-alpine as maven
 
-COPY pom.xml .
+COPY pom.xml . 
 
 RUN mvn verify clean -DskipTests=true --fail-never
 

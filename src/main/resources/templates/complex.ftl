@@ -84,7 +84,16 @@
 										  spacefill 0.5;
 										  set specular on;
 										  load append /files/${vl.vlVariant.protein.pdbId}/proteins/${vl.variantFolder}/vina/${vl.ligandFolder}/${vl.ligandFolder}_min_docking.pdbqt;
-										  display 1.1,2.1; frame 0;`,"left");
+										  display 1.1,2.1; frame 0;
+										  set refreshing off;
+                                                                                  if(antialiasDisplay);
+                                                                                  antialiasDisplay = false;
+                                                                                  cartoonFancy=false;
+                                                                                  antialiasDisplayFlag = false;else;antialiasDisplay = true;
+                                                                                  cartoonFancy=true;
+                                                                                  antialiasDisplayFlag = true;
+                                                                                  endif;
+                                                                                  set refreshing on;refresh;`,"left");
 					</script>
 				</div>
 				<div class="col-md-6 col-sm-12">
@@ -102,6 +111,12 @@
 							<td><a target="_blank" href="https://www.ebi.ac.uk/chembl/compound_report_card/${vl.vlLigand.chemblId}">${vl.vlLigand.chemblId}</a></td>
 						</tr>
 						<tr>
+                                                        <td style="width:50%;"><p class="font-weight-bold">Ligand Similarity* to the one in the experimentally obtained structure of the <a href="https://www.rcsb.org/structure/${vl.vlVariant.protein.pdbId}" target="_blank">${vl.vlVariant.protein.pdbId}</a> complex</p>
+                                                            <br><small>* Tanimoto similarity obtained from the comparison of the FP2 fingerprint of the ligands, calculated using OpenBabel</small>
+                                                        </td>
+                                                        <td>${vl.tanimotoSimilarity}</td>
+                                                </tr>
+						<tr>
 							<td><p class="font-weight-bold">Binding Affinity</p></td>
 							<td>
 								<ul>
@@ -111,6 +126,15 @@
 								</ul>
 							</td>
 						</tr>
+						<tr>
+                                                        <td colspan="2"><p class="font-weight-bold">${listString}</p></td>
+                                                </tr>
+                                                <#list wtList as wtVl>
+                                                <tr> 
+                                                        <td><a target="_blank" href="/variant/${wtVl.vlVariant.variantId}/ligand/${vl.vlLigand.chemblId}">${wtVl.vlVariant.variantType}</a></td>
+                                                        <td>${wtVl.bindingAffinity} Kcal/Mol</td>
+                                                </tr>
+                                                </#list>
 					</table>
 				</div>
             </div> <!-- row -->			

@@ -51,6 +51,12 @@ public class MutatedProteinLigand {
 	@Column(length = 50, nullable = false, name = "ligand_folder")
 	private String ligandFolder;
 
+    @Schema(description = "Tanimoto similarity obtained from the comparison of the FP2 fingerprint of the ligand with the one in the experimentally obtained complex structure, calculated using OpenBabel", 
+        example = "288", required = true)    
+    @NotNull
+    @Column(length = 50, nullable = false, name = "tanimoto_similarity")
+    private String tanimotoSimilarity;
+
     @Schema(description = "protein-ligand docking calculated binding affinities for up to 3 conformers spearated by semi-colon (unit: kcal/mol).", 
             example = "Conformer 1: -7.0;Conformer 2: -6.8;Conformer 3: -6.5", required = true)
     @NotNull
@@ -104,8 +110,16 @@ public class MutatedProteinLigand {
 	public void setLigandFolder(String ligandFolder) {
 		this.ligandFolder = ligandFolder;
 	}
+	
+	public String getTanimotoSimilarity() {
+        return tanimotoSimilarity;
+    }
 
-	public String getBindingAffinity() {
+    public void setTanimotoSimilarity(String tanimotoSimilarity) {
+        this.tanimotoSimilarity = tanimotoSimilarity;
+    }
+
+  public String getBindingAffinity() {
 		return bindingAffinity;
 	}
 

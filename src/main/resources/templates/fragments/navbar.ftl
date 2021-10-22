@@ -24,6 +24,7 @@
                                 <li class="nav-item"><a class="page-scroll" href="/">home</a></li>
                                 <li class="nav-item"><a class="page-scroll" href="/swagger-ui/index.html?configUrl=/v3/api-docs/swagger-config">REST API</a></li>
                                 <li class="nav-item"><a class="page-scroll" href="/methodology">Methodology</a></li>
+                                <li class="nav-item"><a class="page-scroll" href="/stats">Statistics</a></li>
                                 <li class="nav-item"><a class="page-scroll" href="/citation">Citation</a></li>
                             </ul>
                         </div>
