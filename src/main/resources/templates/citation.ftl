@@ -59,7 +59,7 @@
 				
 				<div class="col-md-12 col-sm-12">
 					<strong>Cite as</strong><br>
-[1]Ammar, Ammar. PSnpBind: A database of mutated binding site protein-ligand complexes constructed using a multithreaded virtual screening workflow 2021. doi:10.5281/zenodo.5112334.
+[1]Ammar, A., Cavill, R., Evelo, C. et al. PSnpBind: a database of mutated binding site protein–ligand complexes constructed using a multithreaded virtual screening workflow. J Cheminform 14, 8 (2022). <a href="https://doi.org/10.1186/s13321-021-00573-5" title="PSnpBind journal article">https://doi.org/10.1186/s13321-021-00573-5</a>
 					
 					
 				</div>
