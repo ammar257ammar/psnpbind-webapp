@@ -33,6 +33,9 @@ public class ProteinJsonLd {
 	@JsonldProperty("bs:hasRepresentation")
 	private String sequence;
 
+	@JsonldProperty("http://purl.org/dc/terms/conformsTo")
+	private String conformsTo;
+
 	public String getPdbId() {
 		return pdbId;
 	}
@@ -89,6 +92,14 @@ public class ProteinJsonLd {
 		this.sequence = sequence;
 	}
 
+	public String getConformsTo() {
+		return conformsTo;
+	}
+
+	public void setConformsTo(String conformsTo) {
+		this.conformsTo = conformsTo;
+	}
+
 	public ProteinJsonLd(String pdbId, String proteinName, String uniprotId) {
 		this.pdbId = pdbId;
 		this.pdbUrl = "https://www.rcsb.org/structure/"+pdbId;
@@ -97,6 +108,7 @@ public class ProteinJsonLd {
 		this.taxon = "https://www.ncbi.nlm.nih.gov/taxonomy/9606";
 		this.image = "http://cdn.rcsb.org/images/structures/"+pdbId.substring(1, 3)+"/"+pdbId+"/"+pdbId+"_assembly-1.jpeg";
 		this.sequence = "https://www.uniprot.org/uniprot/"+uniprotId+".fasta";
+		this.conformsTo = "https://bioschemas.org/profiles/Protein/0.11-RELEASE";
 	}
 	
 }
