@@ -79,7 +79,7 @@
 							<td>${protein.experimentalMethod}</td>
 						</tr>
 						<tr>
-							<td><p class="font-weight-bold">PBB Resolution</p></td>
+							<td><p class="font-weight-bold">PDB Resolution</p></td>
 							<td>${protein.pdbResolution}</td>
 						</tr>
 						<tr>
