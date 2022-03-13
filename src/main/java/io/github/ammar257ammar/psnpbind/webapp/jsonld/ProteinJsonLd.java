@@ -1,14 +1,12 @@
 package io.github.ammar257ammar.psnpbind.webapp.jsonld;
 
 import ioinformarics.oss.jackson.module.jsonld.annotation.JsonldId;
-import ioinformarics.oss.jackson.module.jsonld.annotation.JsonldNamespace;
 import ioinformarics.oss.jackson.module.jsonld.annotation.JsonldProperty;
 import ioinformarics.oss.jackson.module.jsonld.annotation.JsonldResource;
 import ioinformarics.oss.jackson.module.jsonld.annotation.JsonldType;
 
 @JsonldResource
-@JsonldNamespace(name = "bs", uri = "https://bioschemas.org/")
-@JsonldType("bs:Protein")
+@JsonldType("https://schema.org/Protein")
 public class ProteinJsonLd {
 	
 	@JsonldId
@@ -24,13 +22,13 @@ public class ProteinJsonLd {
 	@JsonldProperty("https://schema.org/identifier")
 	private String uniprotId;
 	
-	@JsonldProperty("bs:taxonomicRange")
+	@JsonldProperty("https://schema.org/taxonomicRange")
 	private String taxon;
 
 	@JsonldProperty("https://schema.org/image")
 	private String image;
 
-	@JsonldProperty("bs:hasRepresentation")
+	@JsonldProperty("https://schema.org/hasRepresentation")
 	private String sequence;
 
 	@JsonldProperty("http://purl.org/dc/terms/conformsTo")
