@@ -70,18 +70,19 @@ public class MainController {
 
     	String proteinJsonLd = "";
 
-    	if(protein != null) {
-
-        	ProteinJsonLd pld = new ProteinJsonLd(protein.getPdbId(), protein.getProteinUuid(),
-					protein.getProteinName(), 
-					protein.getUniprotId());
-
-			try {
-				proteinJsonLd = objectMapper.writeValueAsString(JsonldResource.Builder.create().build(pld));
-			} catch (JsonProcessingException e) {
-				e.printStackTrace();
-			}
+    	if(protein == null) {
+    		return new ModelAndView("notfound");
     	}
+    	
+    	ProteinJsonLd pld = new ProteinJsonLd(protein.getPdbId(), protein.getProteinUuid(),
+				protein.getProteinName(), 
+				protein.getUniprotId());
+
+		try {
+			proteinJsonLd = objectMapper.writeValueAsString(JsonldResource.Builder.create().build(pld));
+		} catch (JsonProcessingException e) {
+			e.printStackTrace();
+		}
 
         Map<String, Object> params = new HashMap<String, Object>();
         params.put("protein", protein);
@@ -95,6 +96,10 @@ public class MainController {
 
     	MutatedProtein variant = (MutatedProtein) proteinVariantService.findOneByVariantId(variantId);
     	
+    	if(variant == null) {
+    		return new ModelAndView("notfound");
+    	}
+    	
         Map<String, Object> params = new HashMap<String, Object>();
         params.put("variant", variant);
 
@@ -107,6 +112,10 @@ public class MainController {
 
     	MutatedProteinLigand vl = (MutatedProteinLigand)  mutatedProteinLigandService.findOneById(
     									new MutatedProteinLigandId(Long.parseLong(variantId), ligandId));
+    	
+    	if(vl == null) {
+    		return new ModelAndView("notfound");
+    	}
     	
     	String[] conformers = vl.getBindingAffinity().split(";");
     	    	
