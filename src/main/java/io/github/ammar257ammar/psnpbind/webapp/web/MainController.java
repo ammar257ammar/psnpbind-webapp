@@ -72,7 +72,7 @@ public class MainController {
 
     	if(protein != null) {
 
-        	ProteinJsonLd pld = new ProteinJsonLd(protein.getPdbId(), 
+        	ProteinJsonLd pld = new ProteinJsonLd(protein.getPdbId(), protein.getProteinUuid(),
 					protein.getProteinName(), 
 					protein.getUniprotId());
 

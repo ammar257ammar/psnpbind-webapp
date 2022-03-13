@@ -10,17 +10,22 @@ import ioinformarics.oss.jackson.module.jsonld.annotation.JsonldType;
 public class ProteinJsonLd {
 	
 	@JsonldId
+	private String psnpbindJsonldId;
+	
 	@JsonldProperty("https://schema.org/identifier")
-	private String pdbId;
+	private String psnpbindIdentifier;
 
 	@JsonldProperty("https://schema.org/url")
-	private String pdbUrl;
+	private String psnpbindUrl;
 	
 	@JsonldProperty("https://schema.org/name")
 	private String proteinName;
 
-	@JsonldProperty("https://schema.org/identifier")
-	private String uniprotId;
+	@JsonldProperty("https://schema.org/sameAs")
+	private String sameAsUniprotId;
+
+	@JsonldProperty("https://schema.org/sameAs")
+	private String sameAsPdbId;
 	
 	@JsonldProperty("https://schema.org/taxonomicRange")
 	private String taxon;
@@ -34,20 +39,45 @@ public class ProteinJsonLd {
 	@JsonldProperty("http://purl.org/dc/terms/conformsTo")
 	private String conformsTo;
 
-	public String getPdbId() {
-		return pdbId;
+
+	public String getPsnpbindJsonldId() {
+		return psnpbindJsonldId;
 	}
 
-	public void setPdbId(String pdbId) {
-		this.pdbId = pdbId;
+	public void setPsnpbindJsonldId(String psnpbindJsonldId) {
+		this.psnpbindJsonldId = psnpbindJsonldId;
 	}
 
-	public String getPdbUrl() {
-		return pdbUrl;
+	public String getPsnpbindIdentifier() {
+		return psnpbindIdentifier;
 	}
 
-	public void setPdbUrl(String pdbUrl) {
-		this.pdbUrl = pdbUrl;
+	public void setPsnpbindIdentifier(String psnpbindIdentifier) {
+		this.psnpbindIdentifier = psnpbindIdentifier;
+	}
+
+	public String getSameAsUniprotId() {
+		return sameAsUniprotId;
+	}
+
+	public void setSameAsUniprotId(String sameAsUniprotId) {
+		this.sameAsUniprotId = sameAsUniprotId;
+	}
+
+	public String getSameAsPdbId() {
+		return sameAsPdbId;
+	}
+
+	public void setSameAsPdbId(String sameAsPdbId) {
+		this.sameAsPdbId = sameAsPdbId;
+	}
+
+	public String getPsnpbindUrl() {
+		return psnpbindUrl;
+	}
+
+	public void setPsnpbindUrl(String psnpbindUrl) {
+		this.psnpbindUrl = psnpbindUrl;
 	}
 
 	public String getProteinName() {
@@ -56,14 +86,6 @@ public class ProteinJsonLd {
 
 	public void setProteinName(String proteinName) {
 		this.proteinName = proteinName;
-	}
-
-	public String getUniprotId() {
-		return uniprotId;
-	}
-
-	public void setUniprotId(String uniprotId) {
-		this.uniprotId = uniprotId;
 	}
 
 	public String getTaxon() {
@@ -98,11 +120,13 @@ public class ProteinJsonLd {
 		this.conformsTo = conformsTo;
 	}
 
-	public ProteinJsonLd(String pdbId, String proteinName, String uniprotId) {
-		this.pdbId = pdbId;
-		this.pdbUrl = "https://www.rcsb.org/structure/"+pdbId;
+	public ProteinJsonLd(String pdbId, String proteinUuid, String proteinName, String uniprotId) {
+		this.psnpbindJsonldId = "https://psnpbind.org/protein/"+proteinUuid;
+		this.psnpbindIdentifier = "https://psnpbind.org/protein/"+proteinUuid;
+		this.psnpbindUrl = "https://psnpbind.org/protein/"+pdbId;
 		this.proteinName = proteinName;
-		this.uniprotId = uniprotId;
+		this.sameAsPdbId = "https://www.rcsb.org/structure/"+pdbId;
+		this.sameAsUniprotId = "https://www.uniprot.org/uniprot/"+uniprotId;
 		this.taxon = "https://www.ncbi.nlm.nih.gov/taxonomy/9606";
 		this.image = "http://cdn.rcsb.org/images/structures/"+pdbId.substring(1, 3)+"/"+pdbId+"/"+pdbId+"_assembly-1.jpeg";
 		this.sequence = "https://www.uniprot.org/uniprot/"+uniprotId+".fasta";
