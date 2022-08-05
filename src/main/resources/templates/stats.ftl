@@ -238,7 +238,7 @@
                                            </tr>
                                            <tr>
                                                    <td> <a href="https://www.uniprot.org/uniprot/P04637" title="P04637">P04637</a></td>
-                                                   <td> <a href="https://www.rcsb.org/structure/5a7b" title="5a7b"></a></td>
+                                                   <td> <a href="https://www.rcsb.org/structure/5a7b" title="5a7b">5a7b</a></td>
                                                    <td>160</td>
                                                    <td>113</td>
                                                    <td>17996</td>
