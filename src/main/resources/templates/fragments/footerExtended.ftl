@@ -18,7 +18,8 @@
                     <div class="copyright text-center mt-35">
                         <p class="text">Developed by <a href="http://github.com/ammar257ammar" rel="nofollow">Ammar Ammar</a> </p>
                     	<br>
-                    	<p class="text">PSnpBind is licensed under <a target="_blank" href="https://www.gnu.org/licenses/agpl-3.0.en.html">AGPL v3.0</a></p>
+                    	<p class="text">PSnpBind Data is licensed under <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">CC-BY v4.0</a></p>
+						<a href="https://doi.org/10.5281/zenodo.5112334"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.5112334.svg" alt="DOI"></a>
                     </div> <!--  copyright -->
                 </div>
             </div> <!-- row -->
