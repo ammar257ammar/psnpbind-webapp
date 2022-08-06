@@ -118,7 +118,7 @@
 					<table class="table variant-table">
 						<tr>
 							<td><p class="font-weight-bold">PDB ID</p></td>
-							<td>${variant.protein.pdbId}</td>
+							<td><a href="https://www.rcsb.org/structure/${variant.protein.pdbId}" target="_blank">${variant.protein.pdbId}</a></td>
 						</tr>
 						<tr>
 							<td><p class="font-weight-bold">Variant Type</p></td>
