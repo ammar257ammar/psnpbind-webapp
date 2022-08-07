@@ -99,6 +99,10 @@
 				<div class="col-md-6 col-sm-12">
 					<table class="table">
 						<tr>
+							<td><p class="font-weight-bold">GUID</p></td>
+							<td><a href="https://w3id.org/psnpbind/variant/${vl.vlVariant.variantId}/ligand/${vl.vlLigand.chemblId}" target="_blank">https://w3id.org/psnpbind/variant/${vl.vlVariant.variantId}/ligand/${vl.vlLigand.chemblId}</a></td>
+						</tr>
+						<tr>
 							<td><p class="font-weight-bold">PDB ID</p></td>
 							<td><a href="https://www.rcsb.org/structure/${vl.vlVariant.protein.pdbId}" target="_blank">${vl.vlVariant.protein.pdbId}</a></td>
 						</tr>

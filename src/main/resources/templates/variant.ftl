@@ -117,6 +117,10 @@
 				<div class="col-md-6 col-sm-12">
 					<table class="table variant-table">
 						<tr>
+							<td><p class="font-weight-bold">GUID</p></td>
+							<td><a href="https://w3id.org/psnpbind/variant/${variant.variantId}" target="_blank">https://w3id.org/psnpbind/variant/${variant.variantId}</a></td>
+						</tr>
+						<tr>
 							<td><p class="font-weight-bold">PDB ID</p></td>
 							<td><a href="https://www.rcsb.org/structure/${variant.protein.pdbId}" target="_blank">${variant.protein.pdbId}</a></td>
 						</tr>

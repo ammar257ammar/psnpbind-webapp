@@ -65,6 +65,10 @@
 				<div class="col-md-6 col-sm-12">
 					<table class="table">
 						<tr>
+							<td><p class="font-weight-bold">GUID</p></td>
+							<td><a href="https://w3id.org/psnpbind/protein/${protein.pdbId}" target="_blank">https://w3id.org/psnpbind/protein/${protein.pdbId}</a></td>
+						</tr>
+						<tr>
 							<td><p class="font-weight-bold">PDB ID</p></td>
 							<td><a href="https://www.rcsb.org/structure/${protein.pdbId}" target="_blank">${protein.pdbId}</a></td>
 						</tr>

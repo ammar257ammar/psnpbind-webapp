@@ -121,8 +121,8 @@ public class ProteinJsonLd {
 	}
 
 	public ProteinJsonLd(String pdbId, String proteinUuid, String proteinName, String uniprotId) {
-		this.psnpbindJsonldId = "https://psnpbind.org/protein/"+proteinUuid;
-		this.psnpbindIdentifier = "https://psnpbind.org/protein/"+proteinUuid;
+		this.psnpbindJsonldId = "https://w3id.org/psnpbind/protein/"+pdbId;
+		this.psnpbindIdentifier = "https://w3id.org/psnpbind/protein/"+pdbId;
 		this.psnpbindUrl = "https://psnpbind.org/protein/"+pdbId;
 		this.proteinName = proteinName;
 		this.sameAsPdbId = "https://www.rcsb.org/structure/"+pdbId;
