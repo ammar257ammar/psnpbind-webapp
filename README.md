@@ -29,9 +29,9 @@ Note, you need to construct the MySQL data constructed from the [main repository
 ```bash
 docker network create psnpbind-network 
 
-docker run --network=psnpbind-network --rm --name psnpbind-mysql  -d -v PATH_TO_MYSQL_DATA_FOLDER:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=root mysql:5.7.33
+docker run --network=psnpbind-network --rm --name psnpbind-mysql  -d -v PATH_TO_MYSQL_DATA_FOLDER:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=root aammar/psnpbind-db
 
-docker run --network=psnpbind-network --rm --name psnpbind-webapp -d -v PATH_TO_DOCKINGS_DOWNLOADED_FROM_ZENODO:/dockings -p 8086:8086 aammar/psnpbind-webapp:1.0
+docker run --network=psnpbind-network --rm --name psnpbind-webapp -d -v PATH_TO_DOCKINGS_DOWNLOADED_FROM_ZENODO:/dockings -p 8086:8086 aammar/psnpbind-webapp:1.2.3
 ```
 
 
